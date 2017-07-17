@@ -1,0 +1,14 @@
+
+.flexbox { 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.flexbox .row  { 
+  display: flex; 
+}
+
+.cell  { 
+  padding: 10px; 
+  border: 1px solid #999; 
+}

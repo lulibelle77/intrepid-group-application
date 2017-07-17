@@ -1,0 +1,36 @@
+{% include 'header.twig' %}
+
+<div class="container" ng-app="BookApp">
+    <div class="starter-template" ng-controller="BookCtrl">
+        <h1>My Book Catalogue</h1>
+        
+        <div class="flexbox">
+
+            <div class="row">
+                <div class="cell">
+                  <b>Title</b>
+                </div>
+                <div class="cell">
+                  <b>Author</b>
+                </div>
+                <div class="cell">
+                  <b>Year</b>
+                </div>
+                <div class="cell">
+                  <b>Language</b>
+                </div>
+            </div>
+
+            <div class="row" ng-repeat="row in books">
+                <div class="cell">{{row.title}}</div>
+                <div class="cell">{{row.author}}</div>
+                <div class="cell">{{row.year}}</div>
+                <div class="cell">{{row.language}}</div>
+            </div>
+
+        </div>
+ 
+    </div>
+</div>
+
+{% include 'footer.twig' %}
